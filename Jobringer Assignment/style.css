@@ -1,0 +1,680 @@
+/* ... (Previous CSS from the first design) ... */
+
+/* NEW SECTIONS CSS START HERE */
+
+/* Mobile App Download Section */
+.mobile-app-download {
+    background-color: #EFF4F5; /* Light blueish grey */
+    padding: 70px 0;
+}
+
+.mobile-app-download .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* For smaller screens */
+}
+
+.app-content {
+    flex: 1;
+    min-width: 400px; /* Ensure content doesn't get too narrow */
+    text-align: center;
+    padding-right: 30px; /* Space between content and image */
+}
+
+.mobile-app-download h2 {
+    font-size: 2.8em;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.mobile-app-download h3 { /* For "Mobile App Download" smaller text */
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #555555;
+    margin-top: 20px;
+}
+
+.app-badges {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.app-badges img {
+    height: 60px; /* Adjust as needed */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Slightly rounded for the badges */
+}
+
+.app-badges img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.app-mockup {
+    color: transparent;
+    flex: 1;
+    min-width: 300px; /* Ensure image doesn't get too small */
+    text-align: center;
+}
+
+.app-mockup img {
+    color: transparent;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Limit height for large screens */
+    object-fit: contain;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* More pronounced shadow for the mockup */
+    border-radius: 20px;
+}
+
+/* Job Locations Section */
+.job-locations {
+    background-color: #FFFFFF;
+    padding: 60px 0;
+}
+
+.job-locations .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 0 40px; /* More padding for this section if needed */
+}
+
+.job-locations h3 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.job-locations h3::after { /* Underline effect for headings */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #2C7B90;
+    border-radius: 2px;
+}
+
+.job-locations .tag-list {
+    justify-content: flex-start; /* Align tags to left within their column */
+}
+
+/* Job Statistics Section */
+.job-statistics {
+    background-color: #F0F0F0;
+    padding: 50px 0;
+}
+
+.job-statistics .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align numbers to top of their box if varying heights */
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    flex-basis: 20%; /* Distribute items somewhat evenly */
+    min-width: 180px; /* Minimum width for each stat item */
+    padding: 15px;
+}
+
+.stat-number {
+    font-size: 3em;
+    font-weight: 800;
+    color: #2C7B90; /* Primary accent color */
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.stat-label {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #555555;
+}
+
+/* Main Footer */
+.main-footer {
+    background-color: #282c34; /* Darker charcoal */
+    color: #FFFFFF;
+    padding: 50px 0 20px;
+    text-align: center;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.disclaimer-text {
+    font-size: 0.85em;
+    line-height: 1.8;
+    max-width: 900px; /* Constrain text width for readability */
+    margin-bottom: 30px;
+    text-align: center; /* Center the text block */
+    padding: 0 15px;
+}
+
+.recognized-by {
+    margin-bottom: 30px;
+}
+
+.recognized-by p {
+    font-size: 1em;
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
+
+.startup-india-logo {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+}
+
+.follow-us-socials {
+    margin-bottom: 30px;
+}
+
+.follow-us-socials p {
+    font-size: 1em;
+    color: #CCCCCC;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    font-size: 1.4em;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.social-icons a:hover {
+    background-color: #2C7B90;
+    border-color: #2C7B90;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 15px; /* Spacing between links */
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 0.9em;
+    padding: 0 5px; /* Add padding for click area */
+    transition: color 0.2s ease;
+    position: relative;
+}
+
+.footer-links li:not(:last-child) a::after {
+    content: '|';
+    position: absolute;
+    right: -12px; /* Adjust to position separator */
+    color: #AAAAAA;
+}
+
+.footer-links li a:hover {
+    color: #34A8AD;
+}
+
+.copyright-text {
+    font-size: 0.8em;
+    color: #AAAAAA;
+    margin-top: 15px;
+}
+
+/* Responsive adjustments for smaller desktops (basic) */
+@media (max-width: 1024px) {
+    .job-locations .container {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        gap: 30px;
+    }
+
+    .mobile-app-download .container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .app-content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header .main-nav {
+        display: none; /* Hide nav for very small screens, would need a hamburger menu */
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5em;
+    }
+
+    .job-cards-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .job-statistics .container {
+        grid-template-columns: 1fr 1fr; /* 2 columns on tablets */
+        gap: 20px;
+    }
+
+    .social-icons a {
+        width: 38px;
+        height: 38px;
+        font-size: 1.3em;
+    }
+}
+
+/* WhatsApp Floating Button - remains */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ffffff;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float img {
+    width: 35px; /* Adjust size of WhatsApp icon */
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Basic Reset & Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #F8F8F8; /* Light grey background */
+}
+
+
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* Header */
+.main-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2C7B90;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: #2C7B90;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info .fas {
+    font-size: 1.2em;
+    color: #666666;
+}
+
+.user-avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hero Banner */
+.hero-banner {
+    padding: 80px 0 60px;
+    text-align: center;
+    background-color: #F8F8F8; /* Or a subtle gradient */
+}
+
+.hero-banner h1 {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+.hero-banner p {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.search-button {
+    background-color: #2C7B90;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #246a7c;
+}
+
+.cta-buttons .btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin: 0 10px;
+}
+
+.btn-primary {
+    background-color: #34A8AD;
+    color: #FFFFFF;
+    border: 1px solid #34A8AD;
+}
+
+.btn-primary:hover {
+    background-color: #2a8b90;
+    border-color: #2a8b90;
+}
+
+.btn-secondary {
+    background-color: #FFFFFF;
+    color: #333333;
+    border: 1px solid #D0D0D0;
+}
+
+.btn-secondary:hover {
+    background-color: #F0F0F0;
+}
+
+/* Quick Search */
+.quick-search {
+    background-color: #FFFFFF;
+    padding: 35px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-top: -30px; /* Overlap with hero for visual flow */
+    position: relative; /* For z-index if needed */
+    z-index: 10;
+}
+
+.quick-search h3 {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+.tag-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tag-list li {
+    background-color: #E6F3F4;
+    color: #2C7B90;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.tag-list li:hover {
+    background-color: #d1eaea;
+    transform: translateY(-2px);
+}
+
+/* Featured Jobs */
+.featured-jobs {
+    padding: 60px 0;
+}
+
+.featured-jobs h2, .featured-employers h2 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333333;
+}
+
+.job-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.job-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes button to bottom */
+}
+
+.job-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.job-type-tag {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #FFC107; /* Orange/Yellow */
+    color: #333333;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+.job-card h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+.company-name {
+    color: #2C7B90;
+    font-weight: 500;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.verified-icon {
+    color: #28a745; /* Green checkmark */
+    margin-left: 5px;
+}
+
+.job-details p {
+    color: #666666;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.job-details .fas {
+    color: #999999;
+}
+
+.btn-apply {
+    background-color: #34A8AD;
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    width: fit-content; /* Make button fit content */
+    margin-top: 20px;
+    align-self: flex-start; /* Align button to the left within flex container */
+    transition: background-color 0.2s ease;
+}
+
+.btn-apply:hover {
+    background-color: #2a8b90;
+}
+
+/* Featured Employers */
+.featured-employers {
+    padding: 50px 0 80px;
+    background-color: #F0F5F6; /* Slightly different background for distinction */
+}
+
+.employer-logos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    justify-items: center;
+}
+
+.logo-wrapper {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Fixed height for uniform display */
+    width: 100%; /* Take full width of grid column */
+    max-width: 180px; /* Max width for individual logo container */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.logo-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.logo-wrapper img {
+    max-width: 80%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+
+/* Footer (optional) */
+.main-footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
